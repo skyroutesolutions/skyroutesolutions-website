@@ -27,6 +27,14 @@
     <link rel="stylesheet" href="assets/css/cursor.css">
     <link rel="stylesheet" href="assets/css/custom-font.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        #process-img{
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body class="it-services">
@@ -543,18 +551,22 @@
     <!-- main area start  -->
     <main>
         <!-- hero section start  -->
-        <section class="hero hero-style-one pos-rel bg_img" data-background="assets/img/bg/tour-bg.jpg">
-            <div class="hero-shape">
-                <div class="shape shape--one bg_img" data-background="assets/img/shape/hero-glassisom.png"></div>
-                <div class="shape shape--two"><img src="assets/img/shape/hero-shape01.png" alt=""></div>
-                <div class="shape shape--three"><img src="assets/img/shape/hero-shape04.png" alt=""></div>
-            </div>
+        <section class="hero hero-style-one pos-rel" style="position: relative; overflow: hidden;">
+            <video autoplay muted loop playsinline class="hero-video-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="assets/video/main-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div id="overlay-main" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)); position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;"></div>
+        
             <div class="container">
                 <div class="hero_wrap">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="xb-hero">
-                                <h1 class="xb-item--title wow fadeInUp" data-wow-duration="600ms">Empowering Tour & Travel Agencies with Custom IT Solutions</h1>
+                                <h1 class="xb-item--title wow fadeInUp" data-wow-duration="600ms">
+                                    Empowering Tour & Travel Agencies with Custom IT Solutions
+                                </h1>
                                 <p class="xb-item--content wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
                                     At Skyroute Solutions, we specialize in creating bespoke websites and mobile applications designed to elevate your travel business to new heights.
                                 </p>
@@ -570,15 +582,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="hero-right_img">
                                 <img class="wow skewIn" data-wow-duration="800ms" src="assets/img/hero/travel-girl.png" alt="">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- hero section end  -->
 
         <div class="bg-white">
@@ -589,7 +602,7 @@
                     <div class="about-wrap mt-none-30 ul_li_between">
                         <div class="about-item mt-30 xb-mouseenter wow fadeInUp" data-wow-delay="000ms" data-wow-duration="600ms">
                             <div class="xb-item--img">
-                                <img src="assets/img/about/img-01.png" alt="">
+                                <img src="assets/img/about/img1.png" width="250" alt="">
                             </div>
                             <h3 class="xb-item--heading"><span><img src="assets/img/icon/about-icon01.png" alt=""></span>About us</h3>
                             <div class="xb-item--holder">
@@ -601,7 +614,7 @@
                         </div>
                         <div class="about-item mt-30 xb-mouseenter wow fadeInUp" data-wow-delay="150ms" data-wow-duration="600ms">
                             <div class="xb-item--img">
-                                <img src="assets/img/about/img-02.png" alt="">
+                                <img src="assets/img/about/img2.png" width="250" alt="">
                             </div>
                             <h3 class="xb-item--heading"><span><img src="assets/img/icon/about-icon02.png" alt=""></span>Our mission</h3>
                             <div class="xb-item--holder">
@@ -613,7 +626,7 @@
                         </div>
                         <div class="about-item mt-30 xb-mouseenter active wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">
                             <div class="xb-item--img">
-                                <img src="assets/img/about/img-03.png" alt="">
+                                <img src="assets/img/about/img3.png" width="250"  alt="">
                             </div>
                             <h3 class="xb-item--heading"><span><img src="assets/img/icon/about-icon03.png" alt=""></span>Our vision</h3>
                             <div class="xb-item--holder">
@@ -634,10 +647,10 @@
         <!-- service start -->
         <section class="services z-1 service-height pos-rel">
             <div class="service-images">
-                <div class="service-image-item" data-background="https://images.unsplash.com/photo-1678690832310-cf614292671d?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                <div class="service-image-item" data-background="assets/img/service/website-building.png"></div>
                 <div class="service-image-item active" data-background="https://images.unsplash.com/photo-1674027326254-88c960d8e561?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                <div class="service-image-item" data-background="https://images.unsplash.com/photo-1724754608914-50503c85e111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                <div class="service-image-item" data-background="assets/img/service/image.png"></div>
+                <div class="service-image-item" data-background="assets/img/service/social-media.jpg"></div>
+                <div class="service-image-item" data-background="assets/img/service/paid-ad.png"></div>
             </div>
             <div class="service-content-box ul_li pos-rel">
                 <div class="service-content-list">
@@ -698,10 +711,10 @@
                    </div>
                 </div>
                 <div class="service-content-image">
-                    <div class="xb-item--img" data-background="https://images.unsplash.com/photo-1678690832310-cf614292671d?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                    <div class="xb-item--img" data-background="assets/img/service/website-building.png"></div>
                     <div class="xb-item--img active" data-background="https://images.unsplash.com/photo-1674027326254-88c960d8e561?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                    <div class="xb-item--img" data-background="https://images.unsplash.com/photo-1724754608914-50503c85e111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                    <div class="xb-item--img" data-background="assets/img/service/image.png"></div>
+                    <div class="xb-item--img" data-background="assets/img/service/social-media.jpg"></div>
+                    <div class="xb-item--img" data-background="assets/img/service/paid-ad.png"></div>
                 </div>
             </div>
         </section>
@@ -769,8 +782,8 @@
                                 <span class="xb-item--text">Solutions for Growth</span>
                             </div>
                             <div class="fanfact-icon">
-                                <div class="icon icon--one"><img src="assets/img/fanfact/img01.png" alt=""></div>
-                                <div class="icon icon--two"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/mission-vision.jpg" alt=""></div>
+                                <div class="icon icon--one"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/img1.png" alt=""></div>
+                                <div class="icon icon--two"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/img2.png" alt=""></div>
                                 <div class="icon icon--three"><img src="assets/img/icon/fun_icon01.png" alt=""></div>
                             </div>
                         </div>
@@ -784,7 +797,7 @@
                                 <span class="xb-item--text">Vision for Agencies</span>
                             </div>
                             <div class="fanfact-icon fanfact-icon--two">
-                                <div class="icon icon--one"><img src="assets/img/fanfact/img03.png" alt=""></div>
+                                <div class="icon icon--one"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/img3.png" alt=""></div>
                                 <div class="icon icon--two"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/image.png" alt=""></div>
                                 <div class="icon icon--three"><img src="assets/img/icon/fun_icon02.png" alt=""></div>
                             </div>
@@ -800,7 +813,7 @@
                             </div>
                             <div class="fanfact-icon fanfact-icon--three">
                                 <div class="icon icon--one"><img src="assets/img/fanfact/img05.png" alt=""></div>
-                                <div class="icon icon--two"><img src="assets/img/fanfact/img06.png" alt=""></div>
+                                <div class="icon icon--two"><img style="height: 100%; width: 100%; object-fit: cover; border-radius: 100%;" src="assets/img/fanfact/img4.png" alt=""></div>
                                 <div class="icon icon--three"><img src="assets/img/icon/fun_icon03.png" alt=""></div>
                             </div>
                         </div>
@@ -838,8 +851,8 @@
                         <div class="process-right f-right">
                             <div class="process-item">
                                 <span class="xb-item--number">01</span>
-                                <div class="xb-item--img">
-                                    <img src="assets/img/process/vision.png" alt="">
+                                <div id="process-img" class="xb-item--img">
+                                    <img src="assets/img/process/img1.png" alt="">
                                 </div>
                                 <div class="xb-item--holder">
                                     <h3 class="xb-item--title">Understanding Your Vision</h3>
@@ -850,8 +863,8 @@
                             </div>
                             <div class="process-item">
                                 <span class="xb-item--number">02</span>
-                                <div class="xb-item--img">
-                                    <img src="assets/img/process/strategic.png" alt="">
+                                <div id="process-img" class="xb-item--img">
+                                    <img src="assets/img/process/img2.png" alt="">
                                 </div>
                                 <div class="xb-item--holder">
                                     <h3 class="xb-item--title">Strategic Planning</h3>
@@ -862,8 +875,8 @@
                             </div>
                             <div class="process-item">
                                 <span class="xb-item--number">03</span>
-                                <div class="xb-item--img">
-                                    <img src="assets/img/process/brand.png" alt="">
+                                <div id="process-img" class="xb-item--img">
+                                    <img src="assets/img/process/img3.png" alt="">
                                 </div>
                                 <div class="xb-item--holder">
                                     <h3 class="xb-item--title">Building Your Brand</h3>
@@ -874,8 +887,8 @@
                             </div>
                             <div class="process-item">
                                 <span class="xb-item--number">04</span>
-                                <div class="xb-item--img">
-                                    <img src="assets/img/process/confidence.png" alt="">
+                                <div id="process-img" class="xb-item--img">
+                                    <img src="assets/img/process/img4.png" alt="">
                                 </div>
                                 <div class="xb-item--holder">
                                     <h3 class="xb-item--title">Launch with Confidence</h3>
@@ -886,8 +899,8 @@
                             </div>
                             <div class="process-item">
                                 <span class="xb-item--number">05</span>
-                                <div class="xb-item--img">
-                                    <img src="assets/img/process/image05.png" alt="">
+                                <div id="process-img" class="xb-item--img">
+                                    <img src="assets/img/process/img5.png" alt="">
                                 </div>
                                 <div class="xb-item--holder">
                                     <h3 class="xb-item--title">Ongoing Growth & Support</h3>
@@ -1096,7 +1109,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="input-field pos-rel">
-                                            <input type="tel" name="number" id="text3" placeholder="+(91) 8827998679">
+                                            <input type="tel" name="number" id="text3" placeholder="8827998679, 9770210066">
                                             <div class="img"><img src="assets/img/icon/call.svg" alt=""></div>
                                         </div>
                                     </div>
@@ -1207,7 +1220,7 @@
                                 <span class="xb-item--sub-title">Email us</span>
                                 <h4 class="xb-item--email">skyroutesolutions@gmail.com</h4>
                                 <span class="xb-item--sub-title">call us</span>
-                                <h4 class="xb-item--number">+(91) 8827998679</h4>
+                                <h4 class="xb-item--number">8827998679, 9770210066</h4>
                             </div>
                         </div>
                         <div class="footer-copyright mt-50 ul_li_between">
