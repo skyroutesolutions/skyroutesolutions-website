@@ -6901,6 +6901,7 @@ body[data-aos-easing=ease] [data-aos] {
     color: #494d57; }
 
 .ap-fea-item {
+  height: 400px;
   overflow: hidden;
   display: inline-block;
   border-radius: 20px;
@@ -6919,9 +6920,16 @@ body[data-aos-easing=ease] [data-aos] {
     border-radius: inherit;
     background: linear-gradient(180deg, rgba(12, 17, 29, 0) 0%, rgba(12, 17, 29, 0.69) 63.19%, #0c111d 100%); }
   .ap-fea-item .xb-item--img {
+    height: 100%;
+    width: 100%;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+    .ap-fea-item .xb-item--img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   .ap-fea-item .xb-item--content {
     position: absolute;
     z-index: 2;
@@ -8060,6 +8068,7 @@ body[data-aos-easing=ease] [data-aos] {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  overflow: hidden;
   background-color: #fff; }
   .team-heading .team-member .member img {
     width: 100%;
@@ -8310,6 +8319,8 @@ body[data-aos-easing=ease] [data-aos] {
       .team-item .xb-item--inner {
         padding: 18px 20px 17px; } }
   .team-item .xb-item--avatar {
+    position: relative;
+    overflow: hidden;
     height: 114px;
     width: 114px;
     margin: -80px 0 23px;
