@@ -93,7 +93,7 @@ const serviceContent = {
   "brand-development-and-logo-design": {
     title: "Brand Development & Logo Design",
     subtitle: "Create a lasting impression with a strong brand identity.",
-    thumbnail: "assets/img/video/img03.jpg",
+    thumbnail: "assets/img/video/brand.png",
     description: `
       Our Brand Development & Logo Design services help you establish a unique and memorable brand identity that resonates with your audience.
     `,
