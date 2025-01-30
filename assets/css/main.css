@@ -6295,7 +6295,7 @@ body[data-aos-easing=ease] [data-aos] {
       text-transform: lowercase; }
 
 .csd-heading .sd-title {
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
 .csd-heading .sd-content span {
   font-weight: 600;
   color: var(--color-heading-two); }
